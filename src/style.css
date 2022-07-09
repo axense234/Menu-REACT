@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Colors */
+/* light blue: #bdfff6 */
+/* crimson pink: #e23c52 */
+
+/* Animations */
+@keyframes button_an {
+  100% {
+    background-color: #e23c52;
+    color: white;
+  }
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  background-color: #bdfff6;
+  font-family: "Redressed", cursive;
+}
+
+h1 {
+  font-size: 5rem;
+  letter-spacing: 0.35rem;
+}
+
+#main-section > hr {
+  width: 10rem;
+  height: 0.5rem;
+  background-color: #e23c52;
+  border-radius: 1rem;
+  border-color: #e23c52;
+  margin-bottom: 1.5rem;
+}
+
+#main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#button-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 1.5rem;
+}
+
+#button-div > button {
+  margin-right: 0.6rem;
+  margin-left: 0.6rem;
+  background-color: #bdfff6;
+  border-color: #bdfff6;
+  color: #e23c52;
+  font-weight: 800;
+  border-style: none;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+#button-div > button:hover {
+  animation-name: button_an;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+img {
+  max-width: 240px;
+  min-width: 240px;
+  max-height: 200px;
+  min-height: 200px;
+  border: 0.5rem solid #e23c52;
+}
+
+#item-section {
+  display: flex;
+  margin: 0 4rem 3rem 4rem;
+  align-items: flex-start;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: center;
+  max-width: 20rem;
+  margin-left: 3rem;
+}
+
+.title > h6 {
+  font-size: 2rem;
+  margin-left: 1rem;
+  align-self: center;
+}
+
+.title > p {
+  font-size: 2rem;
+  margin-left: auto;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.details > hr {
+  width: 24rem;
+  height: 0.2rem;
+  background-color: #e23c52;
+  border-color: #e23c52;
+  border-radius: 1rem;
+  margin-left: 2rem;
+}
+
+.details > p {
+  font-size: 1.5rem;
+  max-width: 24rem;
+  padding: 0.5rem;
+  text-align: start;
+  font-weight: 800;
+}
+
+#menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  img {
+    min-width: 160px;
+    max-width: 160px;
+    min-height: 120px;
+    max-height: 120px;
+  }
+  .details > hr {
+    width: 16rem;
+  }
+  .details > p {
+    font-size: 1.2rem;
+    margin-left: 0.7rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .title > h6 {
+    font-size: 1.5rem;
+  }
+  .title > p {
+    font-size: 1.5rem;
+  }
+  #button-div > button {
+    font-size: 0.8rem;
+  }
+  #item-section {
+    margin: 0 0.5rem 3rem 0.5rem;
+  }
+}
