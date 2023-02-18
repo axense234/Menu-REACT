@@ -1,4 +1,4 @@
-export const menu_items = [
+export const menuItems = [
   {
     img: "https://react-projects-5-menu.netlify.app/images/item-3.jpeg",
     name: "Godzilla Milkshake",

@@ -134,6 +134,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 700px) {
@@ -164,5 +165,13 @@ img {
   }
   #item-section {
     margin: 0 0.5rem 3rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #item-section {
+    margin: 1rem 0;
+    width: 100%;
+    transform: scale(0.6);
   }
 }
