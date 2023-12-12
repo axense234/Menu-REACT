@@ -31,6 +31,8 @@ npm start
 
 ## **Version History**
 
+- 0.3
+  - Analyzed the code to gather to-do and changed a few styles.
 - 0.2
   - Improved React logic by a bit and folder structure
   - See [commit change]https://github.com/axense234/Menu-REACT/commits/master) or See [release history](https://github.com/axense234/Menu-REACT/releases)

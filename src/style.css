@@ -29,6 +29,7 @@ body {
 h1 {
   font-size: 5rem;
   letter-spacing: 0.35rem;
+  margin-top: 3.5rem;
 }
 
 #main-section > hr {
@@ -44,6 +45,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2rem;
 }
 
 #button-div {
