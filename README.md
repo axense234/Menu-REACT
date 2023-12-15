@@ -11,6 +11,8 @@ A simple React Project that focuses on the basics of react,mainly filtering and 
 ### Dependencies
 
 - Check package.json for details.
+- Git
+- Docker(if you want to use the application as a container)
 
 ### Installing
 
@@ -20,9 +22,20 @@ git clone https://github.com/axense234/Birthday-Reminder-REACT.git
 
 ### Executing program
 
+- **Using NPM**
+
 ```
 npm install
 npm start
+```
+
+- **Using Docker**
+
+```
+docker build -t menu-react:0.3.0 .
+docker stop menu-react-app
+docker rm menu-react-app
+docker run -d -p 3000:3000 --name menu-react-app menu-react:0.3.0
 ```
 
 ## **Authors**
